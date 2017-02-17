@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::get('/editoras', 'EditoraController@index');
 Route::get('/editoras/cria', 'EditoraController@cria');
 Route::post('/editoras', 'EditoraController@armazena');
+Route::get('/editoras/edita/{editora}', 'EditoraController@edita');
+Route::get('/editoras/{editora}', 'EditoraController@show');
+Route::patch('/editoras/{editora}', 'EditoraController@atualiza');

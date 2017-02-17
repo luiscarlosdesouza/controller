@@ -32,6 +32,8 @@
               <td>{{ $editora->id }}</td>
               <td>{{ $editora->nome }}</td>
               <td>{{ $editora->email }}</td>
+              <td><a href="/editoras/{{ $editora->id }}">Detalhes</a></td>
+              <td><a href="/editoras/edita/{{ $editora->id}}">Editar</a></td>
             </tr>
           @endforeach
         </tbody>
